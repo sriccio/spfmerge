@@ -12,7 +12,6 @@ jobs:
       - name: Build and publish to pypi
         uses: JRubics/poetry-publish@v1.17
         with:
-          package_directory: "subdirectory"
           plugins: "poetry-dynamic-versioning-plugin"
           pypi_token: ${{ secrets.PUBLISH_REGISTRY_PASSWORD }}
           repository_name: "testpypi"
