@@ -8,9 +8,12 @@ jobs:
   publish-service-client-package:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Build and publish to pypi
         uses: JRubics/poetry-publish@v1.17
         with:
+          package_directory: "subdirectory"
+          plugins: "poetry-dynamic-versioning-plugin"
           pypi_token: ${{ secrets.PUBLISH_REGISTRY_PASSWORD }}
           repository_name: "testpypi"
           repository_url: "https://test.pypi.org/legacy/"
