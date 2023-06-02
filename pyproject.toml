@@ -4,7 +4,7 @@ build-backend = "poetry_dynamic_versioning.backend"
 
 [tool.poetry]
 name = "spfmerge"
-version = "0.0.0"
+version = "v1.0.0"
 description = "Merge two SPF TXT records together"
 authors = ["Sébastien Riccio <sriccio@swisscenter.com>"]
 maintainers = ["Sébastien Riccio <sriccio@swisscenter.com>"]
