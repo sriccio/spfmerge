@@ -11,11 +11,18 @@ maintainers = ["Sébastien Riccio <sriccio@swisscenter.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.7,<4.0"
+python = ">=3.7.2,<4.0"
 fqdn = "^1.5.1"
+Sphinx = { version = ">=1.6,<7", optional = true }
+sphinx-rtd-theme = { version = "1.2.1", optional = true }
+sphinxcontrib-napoleon = { version = "0.7", optional = true }
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.0"
+pytest = ">=7.0,<7.3.1"
+pylint = ">=2.17"
+
+[tool.poetry.extras]
+docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]
 
 [tool.poetry.scripts]
 spfmerge = "spfmerge.spfmerge:cli"
