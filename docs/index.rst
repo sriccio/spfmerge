@@ -1,8 +1,6 @@
-
 Welcome to spfmerge's documentation!
 ====================================
-
-.. automodule:: spfmerge.main
+.. automodule:: spfmerge.cli
     :members:
 
 .. toctree::
