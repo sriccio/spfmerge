@@ -1,7 +1,9 @@
 Welcome to spfmerge's documentation!
 ====================================
-.. automodule:: spfmerge.cli
-    :members:
+
+.. automodule:: checkdmarc
+   :members:
+   :undoc-members:
 
 .. toctree::
    :maxdepth: 2

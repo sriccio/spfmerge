@@ -4,11 +4,32 @@ build-backend = "poetry_dynamic_versioning.backend"
 
 [tool.poetry]
 name = "spfmerge"
-version = "v1.0.0"
+version = "1.0.0"
+packages = [
+    { include = "spfmerge" }
+]
 description = "Merge two SPF TXT records together"
 authors = ["Sébastien Riccio <sriccio@swisscenter.com>"]
 maintainers = ["Sébastien Riccio <sriccio@swisscenter.com>"]
 readme = "README.md"
+license = "Apache-2.0"
+repository = "https://github.com/sriccio/spfmerge"
+documentation = "https://spfmerge.readthedocs.io"
+include = ["CHANGELOG.md"]
+keywords = ["SPF", "DNS"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Communications :: Email",
+    "Development Status :: 3 - Alpha",
+    "Topic :: Internet",
+    "Topic :: Internet :: Name Service (DNS)",
+    "Topic :: Utilities"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/sriccio/spfmerge/issues"
 
 [tool.poetry.dependencies]
 python = ">=3.7.2,<4.0"
