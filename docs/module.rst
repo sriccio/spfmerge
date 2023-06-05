@@ -1,6 +1,6 @@
 Module documentation
 ====================
 
-.. automodule:: spfmerge
+.. automodule:: spfmerge.spfmerge
    :members:
    :undoc-members:
