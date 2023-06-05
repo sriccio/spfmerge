@@ -1,3 +1,6 @@
+Module documentation
+====================
+
 .. automodule:: spfmerge
-    :members:
-    :undoc-members:
+   :members:
+   :undoc-members:
